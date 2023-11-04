@@ -1,17 +1,19 @@
 #include<stdio.h>
-int main( )
+int main()
 {
-	int a,b;
-	
-	a = 10;
-	b = a++;
-	printf("a = %d b = %d\n", a,b);
-	b = ++a;
-	printf("a = %d b = %d\n", a,b);
-	
-	a = 20;
-	b = a--;
-	printf("a = %d b = %d\n",a,b);
-	b= --a;
-	printf("a = %d b = %d\n", a,b);
+	int n;
+	int a=0;
+	int i=0;
+	n=10;
+	while ( n <= 17)
+	{
+		printf("%d ",n);
+		i=i+n;
+		a=a+1;
+		n++;
+		
+		
+		
+	}
+	printf("%d,%d",i,a);
 }

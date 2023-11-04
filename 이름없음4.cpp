@@ -1,14 +1,27 @@
 #include<stdio.h>
-int main( )
+int main()
 {
-	int a = 20;
+	int sum=0;
+	int min=100;
+	int input;
 	
-	a=a+4;
-	printf("a = %d\n", a);
-	a=a-12;
-	printf("a = %d\n", a);
-	a=--a;
-	printf("a = %d\n", a);
-	a=a+110;
-	printf("a = %d\n",a);
+	for(int i=1;i<=4;i++)
+	{
+		scanf("%d",&input);
+		if(input%2==1)
+		{
+			sum=sum+input;
+			if(input<min)
+			{
+				min=input;
+			}
+		}
+
+	}
+	
+	if(sum==0)
+	{
+		printf("-1 \n");
+	}
+	printf("%d,%d",sum,min);
 }
